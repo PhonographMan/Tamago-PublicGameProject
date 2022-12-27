@@ -1,3 +1,4 @@
+
 # Player Actions and Motivations
 
 ## Introduction
@@ -63,7 +64,11 @@ Multiplayer may become more difficult with this in mind, locking it out entirely
 
 ## Background Research
 
+![Methods to show information for a player. A floor marker (highlight floor). Point to them with an arrow. Make them glow (damage or power). Cover them in goo/position for damage and show heath bar to show damage taken.](https://github.com/PhonographMan/Tamago-PublicGameProject/blob/main/GameDesign/Resources/ScottRodgers-LevelUp-272-A.png?raw=true)
 
+*Level Up – Scott Rodgers (pg. 272)*
+
+On interface Rogers identifies the three key methods to identifying key information on a player. Understanding spatial awareness is key to the player knowing their actions and their involvement in the world. Understanding who they are is important, in this instance they use markers which isn’t always required but may be. Indication of damage is important, or indication of increased / taken damage is vital to ensure the player understands their actions. Health bars are also another great technique for this writes Rodgers as they double up as an arrow and non-diegetic user interface.
 
 ----------
 
