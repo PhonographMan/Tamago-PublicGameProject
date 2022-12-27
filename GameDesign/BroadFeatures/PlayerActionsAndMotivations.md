@@ -18,9 +18,9 @@
 |6|Players and enemies attempt to reduce one another's health through attacks. Attacks have a range in tiles and statistics are used to determine the damage. Enemies wish to defeat the player. Enemies drop valuables (items/weapons) on death which may aid the player.|
 |7|Player attacks occur by selection of a weapon and then activation (firing). Players are aware if the attacks land on enemies and if the attack was effective. They are aware visually on the Enemy and in turn they are aware of their own damage in the same way.|
 |8|Players acquire weapons and items via enemy drops. Players may find weapons and items in the world, within containers or in hard-to-reach places requiring items for movement. Some areas are closed off and require interactions to unlock, those areas may contain items.|
-|9|  |
-|10|  |
-|11|  |
+|9|Enemies and obstacles are visually smaller/larger, less aggressive/more aggressive and elemental in their look to advise on a visual level how the player should act. Tools at the player’s disposal in turn have these same properties.|
+|10|The sizes for entities are tiny, small, regular, large, massive, boss. The player may select a size from small to large on start and adjustments except boss may be made.|
+|11|The elemental attributes include Fire, Water, Nature. The player may also have armour or items/weapons which have these elemental properties. ![Basic elements chart. To be completed later.](https://github.com/PhonographMan/Tamago-PublicGameProject/blob/main/GameDesign/Resources/BasicElements.png?raw=true)|
 |12|  |
 |13|  |
 |14|  |
@@ -53,6 +53,9 @@ Features of such a system require a setup which clearly define the rules and wor
 
 These turn based systems tend to work on single player levels as they are not large-scale battles (Civilizations) but instead single hero battles moving through the world. The reasoning behind a single hero battle is to unite the human playing the game with the player. A story may be built with the avatar and player if they are actively controlling the player. Customisation is also much more apparent when such may also affect the flow (or actions) in the game.
 
+Having a variety of sizes and types of enemies gives the player reason to act and know what their actions entail. It also gives the satisfaction of knowing what the result is or thinking they know what a result may be, creating a plan then following through. Plans even which may not be followed through all the way or which may not succeed is the backbone of game design loops.
+
+The variety of elemental types means that the player is motivated to seek many different types of weapons and item to defeat their enemies. They are also motivated to defend themselves from enemies with these elements.
 
 ## Design Risks
 
@@ -66,9 +69,11 @@ Multiplayer may become more difficult with this in mind, locking it out entirely
 
 ![Methods to show information for a player. A floor marker (highlight floor). Point to them with an arrow. Make them glow (damage or power). Cover them in goo/position for damage and show heath bar to show damage taken.](https://github.com/PhonographMan/Tamago-PublicGameProject/blob/main/GameDesign/Resources/ScottRodgers-LevelUp-272-A.png?raw=true)
 
-*Level Up – Scott Rogders (pg. 272)*
+*Level Up – Scott Rogers (pg. 272)*
 
 On interface Rogers identifies the three key methods to identifying key information on a player. Understanding spatial awareness is key to the player knowing their actions and their involvement in the world. Understanding who they are is important, in this instance they use markers which isn’t always required but may be. Indication of damage is important, or indication of increased / taken damage is vital to ensure the player understands their actions. Health bars are also another great technique for this writes Rodgers as they double up as an arrow and non-diegetic user interface.
+
+Rogers goes on to explain the idea of size and ability with enemies. Everything the player does should be instructed and informed by the game world. There should be nothing in theory left to chance. In a game world with quick decisions a lot of this may come down to the wrong decision (which would not be penalised highly) however in a world with infinite time the correct decision is always available to the player.
 
 ----------
 
