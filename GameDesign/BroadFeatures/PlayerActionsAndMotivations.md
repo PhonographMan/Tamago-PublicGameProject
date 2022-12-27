@@ -15,7 +15,7 @@
 |3|Every time the player moves these counts as an action. Attacking counts as an action. Item use counts as an action. Opening a door, interacting with an interactable and special movement such a jumping count as actions.|
 |4|Every other entity in the area may then take their action. Their actions may include anything the player can do and are dictated by artificial intelligence.|
 |5|Players have attributes such as health. If health reaches zero (or below) the player is dead. Enemies, traps (dangerous tiles) and the environment is attempting to reduce the player’s health.|
-|6|Players and enemies attempt to reduce one another’s health through attacks. Attacks have a range in tiles and statics used to determine the damage. Enemies wish to defeat the player. Enemies drop valuable on death which may aid the player.|
+|6|Players and enemies attempt to reduce one another's health through attacks. Attacks have a range in tiles and statistics are used to determine the damage. Enemies wish to defeat the player. Enemies drop valuables (items/weapons) on death which may aid the player.|
 |7|Player attacks occur by selection of a weapon and then activation (firing). Players are aware if the attacks land on enemies and if the attack was effective. They are aware visually on the Enemy and in turn they are aware of their own damage in the same way.|
 |8|Players acquire weapons and items via enemy drops. Players may find weapons and items in the world, within containers or in hard-to-reach places requiring items for movement. Some areas are closed off and require interactions to unlock, those areas may contain items.|
 |9|  |
@@ -66,7 +66,7 @@ Multiplayer may become more difficult with this in mind, locking it out entirely
 
 ![Methods to show information for a player. A floor marker (highlight floor). Point to them with an arrow. Make them glow (damage or power). Cover them in goo/position for damage and show heath bar to show damage taken.](https://github.com/PhonographMan/Tamago-PublicGameProject/blob/main/GameDesign/Resources/ScottRodgers-LevelUp-272-A.png?raw=true)
 
-*Level Up – Scott Rodgers (pg. 272)*
+*Level Up – Scott Rogders (pg. 272)*
 
 On interface Rogers identifies the three key methods to identifying key information on a player. Understanding spatial awareness is key to the player knowing their actions and their involvement in the world. Understanding who they are is important, in this instance they use markers which isn’t always required but may be. Indication of damage is important, or indication of increased / taken damage is vital to ensure the player understands their actions. Health bars are also another great technique for this writes Rodgers as they double up as an arrow and non-diegetic user interface.
 
