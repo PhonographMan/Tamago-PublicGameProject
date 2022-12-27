@@ -45,6 +45,10 @@
 
 > **Explain why the given feature will work within the game**
 
+## Design Risks
+
+> **Is there anything this design may break or it may close off (or make more difficult to design) in the future? Ensure to add either mitigation or validation!**
+
 ## Background Research
 
 > **Other games or books with the mechanics explained within it.**
