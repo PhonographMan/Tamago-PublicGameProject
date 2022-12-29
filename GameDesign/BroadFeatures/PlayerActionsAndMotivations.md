@@ -21,12 +21,12 @@
 |9|Enemies and obstacles are visually smaller/larger, less aggressive/more aggressive and elemental in their look to advise on a visual level how the player should act. Tools at the player’s disposal in turn have these same properties.|
 |10|The sizes for entities are tiny, small, regular, large, massive, boss. The player may select a size from small to large on start and adjustments except boss may be made.|
 |11|The elemental attributes include Fire, Water, Nature. The player may also have armour or items/weapons which have these elemental properties. ![Basic elements chart. To be completed later.](https://github.com/PhonographMan/Tamago-PublicGameProject/blob/main/GameDesign/Resources/BasicElements.png?raw=true)|
-|12|  |
-|13|  |
-|14|  |
-|15|  |
-|16|  |
-|17|  |
+|12|Actions have three types of reactions based on how well the action went. These are Negative (shown with a dash symbol), Neutral (shown with a circle) and Positive (shown with a plus symbol).|
+|13|Reactions may power up or halt the power of other actions for instance, parrying a held attack from an enemy means the opponents attack does not occur. Multiple positive attacks in a row leads to more attack damage and animations show this.|
+|14|Certain weapons are powered up with positive attacks shown visually and when filled completely will unleash a powerful area of attack.|
+|15|Actions also include cooking, mining, and various gathering actions. These may be directly used (such as food eaten) or traded (such as ores for weapons). The player may be vulnerable during gathering times.|
+|16|The map is entirely new to the player. As the player discovers areas the key locations are then uncovered with resources and locations identified. This allows the player to identify areas which may have been locked previously.|
+|17|There are weapons which force the turn order of actions to change. These force moves for enemies to take a second turn or the player to. Players may want enemies to repeat a turn when stuck in a vulnerable position or may want to move themselves out of one.|
 |18|  |
 |19|  |
 |20|  |
@@ -57,6 +57,10 @@ Having a variety of sizes and types of enemies gives the player reason to act an
 
 The variety of elemental types means that the player is motivated to seek many different types of weapons and item to defeat their enemies. They are also motivated to defend themselves from enemies with these elements.
 
+Player’s love doing cool things and we should be the ones to give them the tools to do so. The reactions feature element allows players to be rewarded for doing well and choosing good decisions. Animations will be required here as making the player look good is as important as the numbers / reactions on the battlefield- the overall feel is everything not just what the player is doing but how.
+
+The area of attack weapons is going to be in-line with storyline elements, magic and the like. These are likely to be parts of the powerup system and in general to set this game apart from others by having longer term goals during a battle. Medium to longer term goals are important to motivate players so that they are not continually given short term after short term goals.
+
 ## Design Risks
 
 Decision pacing may become an issue if there are too many variables for the player to decide upon. This element means that the player spends more time making the decision than performing actions within the game. Making the actions less consequential means that more thinking is advantageous because no decision is ever incorrect, and less penalisation has the same effect. This should be kept in check by reducing the elements which may affect a given decision at any one time and therefore make the calculation for the player clearer and the risks clearer. 
@@ -64,6 +68,8 @@ Decision pacing may become an issue if there are too many variables for the play
 *Designing games – Tynan Sylvester 2013*
 
 Multiplayer may become more difficult with this in mind, locking it out entirely. This is not a deal breaker but something to be kept in mind. It would be possible still however should be defined in a separate document that would be possible. The mitigation is to not have multiplayer for the most part as most of this game is likely to be scaled for single player then to explore a multiplayer game mode with levels scaled for multiplayer. 
+
+The animations during reactions will require more pixel animation work which will increase the cost in this work. This should be mitigated by including this in the documentation specifications when outlining the character design.
 
 ## Background Research
 
