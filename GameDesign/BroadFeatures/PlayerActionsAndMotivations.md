@@ -89,28 +89,55 @@ Rogers goes on to explain the idea of size and ability with enemies. Everything 
 
 ### Game Rating
 
-> **Does this feature have the ability to raise the rating?**
+Enemies and violence towards enemies are a large risk for game rating.
+[UK/EU PEGI:](https://parentzone.org.uk/article/pegi-games-ratings)
+-	Comical Violence may be seen as child friendly
+-	If unrealistic it may be okay up to age 7.
+-	Violence with human characters should be unrealistic for PEGI 12
+-	Gory violence is permitted in arcade style games at PEGI 16 (whatever that means)
+-	PEGI 18 gross horrific violence is accepted against all age groups.
+
+[US/CA ESRB:](https://www.xbox.com/en-US/games/gameratings)
+-	No violence in EC (early childhood)
+-	Comic violence at ‘E’ rating
+-	Mild violence E 10+ (10-13?)
+-	Some violence but minimal blood at Teen
+-	Intense violence at Mature
+-	Intense violence at Adult. Microsoft do not support Adult
 
 ### Patents, Trademarks and Copyright
 
-> **Does this overlap with existing patents, could this be patented.**
+The mechanics are reuses of mechanics from other games. There does not appear at face value to be violations.
 
 ### Build and Systems
 
-> **Is there any big data processing required to get this feature working.**
+When building the map system procedural generation could be implemented in areas. Learning technology may be employed for the enemy spawning technology.
+
+Given the map is likely to made outside of Engine tools Building the Map integration would be required along with entity creation for elements in the world.
 
 ### Tools
 
-> **Do we require more tools to make this work and allow designers to use this feature.**
+The Tilemap tools in Unity are likely not enough. A new map editor would be required with entity editing. This would allow the level editor to be created and imported into the editor with Unity’s serialisation.
+
+Creating enemies, weapons, items and entity parts would likely be better with their own tool. Unity would be capable of creating this tool although it should be authored such that it works with any design tool used for the world map.
 
 ### Save file implications
 
-> **Will this affect how the game saves / loads data and what might that be.**
+Save file will contain the state of the resources, enemies, the player and general world. The AI states and animation are not required as saving and restoring saves are not instant and instead from a checkpoint location.
 
 ### Performance Implications
 
-> **Will this affect performance in some way? Would we need to increase the target machines to play the game?**
+The world map will need to be culled, loaded in and out as the player moves around the world. The AI of the entities is also a large part of this, only the AI of enemies in a close range are required and this should be its own range. The graphical/animation range can easily be turned on and off as there are no collisions (it is a tile-based game).
+
+Single turn performance is likely to be quite unperforming if unchecked. When writing both the code and behaviour design ensure that it is basically instant. It should be fine as past projects have AI with enemies however the AI for an active game (which these are) is very different. Active AI is, ‘follow player’ now ‘attack player’, I do not for see too many different motives for enemies. Perhaps pooling will help.
 
 ### Effect on other systems
 
-> **Might this affect other systems such as economical, battle or exploration.**
+This will affect pretty much everything as it is the foundation for the entire game.
+
+Economically finding items from enemies and in the world, trading items are all the economy. This needs a full design.
+
+The battle system is alluded to in this and all the attacks are to be designed based on the design from this document.
+
+The turn-based nature and weapons which change this are based on this design. The iconic weapons will be based upon this design ability.
+
